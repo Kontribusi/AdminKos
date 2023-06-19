@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <title>Pemesanan Kamar Kos</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Pemesanan Kamar Kos</h1>
+    <div class="products">
+      <div class="product">
+        <h3>Kamar Satu</h3>
+        <p>Harga: Rp200.000 / Hari</p>
+        <p>Fasilitas: AC, WiFi, Kamar Mandi dalam</p>
+        <input type="number" class="quantity-input" min="0" placeholder="Jumlah Hari">
+        <button class="buy-btn" data-price="200000">Pesan</button>
+      </div>
+      <div class="product">
+        <h3>Kamar Dua</h3>
+        <p>Harga: Rp250.000 / Hari</p>
+        <p>Fasilitas: AC, WiFi, Kamar Mandi dalam</p>
+        <input type="number" class="quantity-input" min="0" placeholder="Jumlah Hari">
+        <button class="buy-btn" data-price="250000">Pesan</button>
+      </div>
+      <div class="product">
+        <h3>Kamar Tiga</h3>
+        <p>Harga: Rp300.000 / Hari</p>
+        <p>Fasilitas: AC, WiFi, Kamar Mandi dalam, TV</p>
+        <input type="number" class="quantity-input" min="0" placeholder="Jumlah Hari">
+        <button class="buy-btn" data-price="300000">Pesan</button>
+      </div>
+    </div>
+    <h2>Total Biaya Kamar / Hari</h2>
+    <ul class="cart-items"></ul>
+    <div class="total-price">
+      <span>Total:</span>
+      <span id="total-price">Rp0</span>
+    </div>
+    <div class="total-hari">
+      <span>Jumlah Hari: </span>
+      <span id="total-hari">0</span>
+    </div>
+    <button id="checkout-btn">Checkout</button>
+  </div>
+  <script src="./src/Js/app.js"></script>
+</body>
+</html>
